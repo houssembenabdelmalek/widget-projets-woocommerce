@@ -1,0 +1,178 @@
+.slider-body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(60,161,70, 1);
+    z-index: 1;
+}
+.slider-img {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.slider-body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+	width: 50%;
+	padding: 65px 10%;
+	height: 700px !important;
+	
+}
+.slider-image {
+    height: 700px;
+    background-size: cover;
+    width: 50%;
+    display: block;
+    position: relative;
+}
+.slider-body h2::after {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 3px;
+    background-color: rgba(229, 221, 0, 1);
+}
+.slider-body p>span {
+    display: block;
+	font-size: 24px;
+    font-weight: 600;
+}
+.sl-project::before {
+	content: "";
+    display: inline-block;
+    width: 20px; 
+    height: 20px; 
+    background-image: url('/wp-content/uploads/2024/05/icon-project.png'); 
+    background-size: cover; 
+    margin-right: 10px; 
+}
+.sl-budget::before {
+	content: "";
+    display: inline-block;
+    width: 20px; 
+    height: 20px; 
+    background-image: url('/wp-content/uploads/2024/05/icon-budget.png'); 
+    background-size: cover; 
+    margin-right: 10px; 
+}
+.sl-mission::before {
+	content: "";
+    display: inline-block;
+    width: 20px; 
+    height: 20px; 
+    background-image: url('/wp-content/uploads/2024/05/icon-mission.png'); 
+    background-size: cover; 
+    margin-right: 10px; 
+}
+.slider-body h2, .slider-body p {
+    z-index: 2;
+	color: #fff;
+    font-family: "Rubik", Sans-serif;
+}
+.slider-body h2 {
+    font-size: 42px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.slider-body p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    width: 85%;
+}
+
+.slick-dots {
+    position: absolute;
+    top: 600px;
+    margin-left: 7%;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+	 list-style-type: none;
+}
+.slick-dots button, .btn-action {
+    border: none;
+    margin: 0 10px;
+    border-radius: 0;
+	color: #fff;
+    font-family: "Rubik", Sans-serif;
+	font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.slick-dots button:hover, .btn-action:hover {
+    border-bottom: 3px solid #fff;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+.slick-active button, .btn-action {
+	border-bottom: 3px solid #fff;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+.btn-action {
+    top: 600px;
+    position: absolute;
+    left: 50%;
+}
+.play {
+	display:none;
+}
+@media (min-width: 768px) {
+    
+}
+@media (max-width: 480px) {
+	.slider-body p {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 20px;
+		width: 250%;
+	}	
+	.slick-dots {
+    position: absolute;
+    top: 600px;
+    margin-left: 3%;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+	 list-style-type: none;
+	}
+	.slider-body h2 {
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 170%;
+	}
+	.slick-dots button {
+		display:none
+	}
+	li.slick-active  {
+		border-bottom: 3px solid #fff !important;
+		width:20px !important;
+	}
+	.slick-dots li {
+    	border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+		width:10px;
+		margin: 0 5px;
+	}
+	.btn-action {
+    	top: 580px;
+    	position: absolute;
+    	left: 48%;
+	}
+	.slider-image {
+		width: 51%;
+		margin-left: -5px;
+	}
+}
+
+
+@media screen and (min-width: 950px) {
+  
+}
